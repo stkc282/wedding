@@ -1,0 +1,43 @@
+{% extends "./_base.html" %}
+{% block content %}
+<div class="container">
+	<h2 class="text-center">詳細表示</h2>
+	<div class="row">
+		<div class="col-12">
+			<a class="btn btn-outline-secondary float-right" href="{% url 'index' %}">戻る</a>
+		</div>
+	</div>
+	<!--  -->
+	{% include "./item_card.html" %}
+	<div class="row">
+		<div class="col-12">
+			<a class="btn btn-outline-secondary float-right" href="{% url 'index' %}">戻る</a>
+		</div>
+	</div>
+</div>
+
+
+        <center>
+        <img src="{% static "app/img/インフォメーションピクト.png"%}" width="250px"/>
+        <div>
+            <h2>2019年10月19日（土曜日）</h2>
+            <h2>受付　11時xx分</h2>
+            <h2>受付　12時xx分</h2>
+            <h2>披露宴　13時xx分</h2>
+        </div>
+        <div>
+            <h2>大阪中央公会堂</h2>
+            <h2>にゃんご</h2>
+            <h2>にゃんご</h2>
+        </div>
+        <div>
+            <h2>返信をお願い致します</h2>
+        </div>
+        <div>
+
+            <h1><a href="{% url 'create'  %}"><img src="{% static "app/img/入力アイコン.png"%}" width="250px"/></a></h1>
+
+        </div>
+        </center>
+
+{% endblock %}
