@@ -1,12 +1,32 @@
+{% extends "./_base.html" %}
+{% block content %}
 {% load static %}
 
-{% block content %}
+<div class="jumbotron-Thanks">
         <center>
-        <img src="{% static "app/img/invitation.png"%}" width="250px"/>
-            <h1>Thanks</h1>
-        <div>
-            <a class="btn btn-circle-3d" href="{% url 'index' %}"><img src="{% static "app/img/入力アイコン.png"%}" width="100px"/></a>
-<!--            <h1><a href="{% url 'index' %}"><img src="{% static "app/img/入力アイコン.png"%}" width="250px"/></a></h1>-->
-        </div>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h3><img src="{% static "app/img/入力完了ページ/P1001183.JPG"%}" width="700px"/></h3>
+            <h3><img src="{% static "app/img/入力完了ページ/thanksyouアイコン@3x.png"%}" width="700px"/></h3>
+            <h1>送信完了しました</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
         </center>
+        <div class="float-right">
+            <h3><a class="btn btn-circle-3d" href="{% url 'index' %}"><img src="{% static "app/img/入力完了ページ/ホームアイコン@3x.png"%}" width="150px"/></a>　　　</h3>
+            <!--            <h1><a href="{% url 'index' %}"><img src="{% static "app/img/入力アイコン.png"%}" width="250px"/></a></h1>-->
+            <h1>　</h1>
+            <h1>　</h1>
+            <h1>　</h1>
+        </div>
+
+</div>
 {% endblock %}

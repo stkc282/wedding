@@ -5,12 +5,12 @@ from django.core import validators
 class Item(models.Model):
 
     SEX_CHOICES = (
-        (1, '出席'),
-        (2, '欠席'),
+        (1, 'ご出席'),
+        (2, 'ご欠席'),
     )
 
     name = models.CharField(
-        verbose_name='Name',
+        verbose_name='ご芳名',
         max_length=200,
     )
     # tel = models.CharField(
@@ -28,16 +28,16 @@ class Item(models.Model):
     #     null=True,
     # )
     age = models.CharField(
-        verbose_name='Address',
+        verbose_name='ご住所',
         max_length=200,
     )
     sex = models.IntegerField(
-        verbose_name='どちらかを選択ください',
+        verbose_name='どちらかをお選びください',
         choices=SEX_CHOICES,
         default=1
     )
     memo = models.TextField(
-        verbose_name='備考',
+        verbose_name='メッセージ',
         max_length=300,
         blank=True,
         null=True,
