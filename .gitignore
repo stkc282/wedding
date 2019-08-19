@@ -3,6 +3,5 @@
 __pycache__
 *.py[co]
 db.sqlite3
-
 env
 local_settings.pygit add -A
