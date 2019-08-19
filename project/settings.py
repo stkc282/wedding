@@ -24,6 +24,7 @@ SECRET_KEY = '4q8nhf65e@0u3meznwy6-ctgy8p+_9)3!1*j49smp5y+m5fx2m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+SESION_SECURE = True
 
 try:
     from .local_settings import *
@@ -85,12 +86,20 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation

@@ -103,3 +103,14 @@ def thanks(request):
 
 def access(request):
     return render(request, 'app/access.html', {})
+
+# def create(request):
+#     if request.method == 'POST':
+#         form_class = ItemForm(request.POST)
+#         if form_class.is_valid():
+#             model = form_class.save(commit=False)
+#             model.save()
+#             return redirect('index', pk=form_class.pk)
+#     else:
+#         form_class = ItemForm
+#     return render(request, 'app/thanks.html', {'form': form_class})
