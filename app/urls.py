@@ -13,4 +13,5 @@ urlpatterns = [
     path('delete/<int:pk>/', ItemDeleteView.as_view(), name='delete'),
     path('invitation/', views.invitation, name='invitation'),
     path('thanks/', views.thanks, name='thanks'),
+    path('access/', views.access, name='access'),
 ]

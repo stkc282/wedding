@@ -55,6 +55,15 @@
      background-size: cover;
  }
 
+ .jumbotron-Access{
+     padding:2rem 1rem;
+     background-color:#e9ecef;
+     border-radius:.3rem;
+
+     background:url(アクセス_装飾@3x.png) center no-repeat;
+     background-size: cover;
+ }
+
 
  .jumbotron-Thanks{
      padding:2rem 1rem;

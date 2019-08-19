@@ -13,10 +13,11 @@ class Item(models.Model):
         verbose_name='ご芳名',
         max_length=200,
     )
-    # tel = models.CharField(
-    #     verbose_name='電話番号',
-    #     max_length=200,
-    # )
+    tel = models.CharField(
+        verbose_name='お電話',
+        max_length=200,
+        null=True,
+    )
     # addres = models.CharField(
     #     verbose_name='住所',
     #     max_length=200,
@@ -27,10 +28,18 @@ class Item(models.Model):
     #     blank=True,
     #     null=True,
     # )
-    age = models.CharField(
+
+    yubin = models.CharField(
         verbose_name='ご住所',
         max_length=200,
+        null=True,
     )
+    address = models.CharField(
+        verbose_name='',
+        max_length=200,
+        null=True,
+    )
+
     sex = models.IntegerField(
         verbose_name='どちらかをお選びください',
         choices=SEX_CHOICES,
@@ -52,5 +61,5 @@ class Item(models.Model):
         return self.name
         
     class Meta:
-        verbose_name = 'アイテム'
-        verbose_name_plural = 'アイテム'
+        verbose_name = 'name'
+        verbose_name_plural = 'name'

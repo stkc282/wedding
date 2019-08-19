@@ -101,3 +101,5 @@ def invitation(request):
 def thanks(request):
     return render(request, 'app/thanks.html', {})
 
+def access(request):
+    return render(request, 'app/access.html', {})
